@@ -12,5 +12,5 @@ spring:
     driverClassName: org.h2.Driver
 eureka:
   client:
-    service-url:
-      default-zone: http://localhost:8004/eureka/
+    serviceUrl:
+      defaultZone: http://localhost:8004/eureka/
