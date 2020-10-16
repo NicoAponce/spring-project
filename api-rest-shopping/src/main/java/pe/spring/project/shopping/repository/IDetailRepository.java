@@ -1,0 +1,1 @@
+package pe.spring.project.shopping.repository;import org.springframework.data.jpa.repository.JpaRepository;import org.springframework.stereotype.Repository;import pe.spring.project.shopping.entity.Detail;@Repositorypublic interface IDetailRepository extends JpaRepository<Detail, Long> {}

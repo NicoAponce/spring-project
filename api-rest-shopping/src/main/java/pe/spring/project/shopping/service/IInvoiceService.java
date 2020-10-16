@@ -1,0 +1,1 @@
+package pe.spring.project.shopping.service;import pe.spring.project.shopping.entity.Invoice;import java.util.List;public interface IInvoiceService {    List<Invoice> select();    Invoice get(Long id);    Invoice insert(Invoice invoice);    Invoice update(Long id, Invoice invoice);    Invoice delete(Invoice invoice);}
