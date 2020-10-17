@@ -1,0 +1,1 @@
+INSERT INTO regions(name) VALUES('Asia');INSERT INTO regions(name) VALUES('Europa');INSERT INTO regions(name) VALUES('Africa');INSERT INTO customers(number_id,first_name,last_name,email,region_id,status) VALUES('00001','Nicolas','Gonzales','nico@gmail.com',1,'CREATED');

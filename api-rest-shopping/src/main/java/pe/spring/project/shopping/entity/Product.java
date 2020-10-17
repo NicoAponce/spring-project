@@ -1,0 +1,1 @@
+package pe.spring.project.shopping.entity;import lombok.Data;import java.util.Date;@Datapublic class Product {    private Long id;    private String name;    private String description;    private Integer stock;    private Double price;    private String status;    private Category category;}
