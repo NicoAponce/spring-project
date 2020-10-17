@@ -1,19 +1,17 @@
 server:
-    port: 8080
-  
+    port: 9999
   eureka:
     client:
-      serviceUrl:
+      service-url:
         defaultZone: http://localhost:8761/eureka/
-  
-spring:
+  spring:
     cloud:
-        gateway:
-            discovery:
-                locator:
-                    enabled: true
-            routes:
-            -   id: customer-service
-                uri: file:/tmp/config-repo-3216944306718599490/config-data/
-                predicates:
-                - Path=/customers/**
+      gateway:
+        discovery:
+          locator:
+            enabled: true
+        routes:
+          - id: customer-service
+            uri: lb://customer-service
+            predicates:
+              - Path=/customers/**
