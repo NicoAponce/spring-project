@@ -14,7 +14,7 @@ server:
             enabled: true
         routes:
           - id: customer-service
-            uri: lb://customer-service
+            uri: http://localhost:8002
             predicates:
               - Path=/customers/**
           - id: product-service
