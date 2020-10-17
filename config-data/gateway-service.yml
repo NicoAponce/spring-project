@@ -1,5 +1,5 @@
 server:
-  port: 9999
+  port: 8005
   eureka:
     client:
       service-url:
@@ -12,3 +12,11 @@ spring:
           uri: lb://customer-service:8002
           predicates:
             - Path=/customers/**
+        - id: product-service
+          uri: lb://product-service:8001
+          predicates:
+            - Path=/products/**
+        - id: shopping-service
+          uri: lb://shopping-service:8003
+          predicates:
+            - Path=/invoices/**
