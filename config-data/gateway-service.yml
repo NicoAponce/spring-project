@@ -14,6 +14,6 @@ spring:
                     enabled: true
             routes:
             -   id: customer-service
-                uri: http://localhost:8002
+                uri: file:/tmp/config-repo-3216944306718599490/config-data/
                 predicates:
                 - Path=/customers/**
